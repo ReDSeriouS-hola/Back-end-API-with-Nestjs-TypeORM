@@ -8,12 +8,12 @@ import { ContactoModule } from './contacto/contacto.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
-    type:'mongodb',
-    url:'mongodb+srv://1802278:1802278@cluster0.hmxrh3j.mongodb.net/?retryWrites=true&w=majority',
+    type:'YOUR DATA-BASE SOURCE TYPE HERE',
+    url:'YOR-DATA-BASE SOURCE HERE',
     port:27017,
-    database:"contactos-API-Nest",
-    username:'1802278',
-    password: "1802278",
+    database:"THE NAME OF THE DATA-BASE HERE",
+    username:'USERNAME',
+    password: "PASSWORD",
     useNewUrlParser:true,
     autoLoadEntities:true,
     useUnifiedTopology: true,
