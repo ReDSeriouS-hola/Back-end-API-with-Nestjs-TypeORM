@@ -21,7 +21,6 @@ export class ContactoService {
     
     async findOne(id) {
       const data= await this.contactoRepository.findOne(id);
-      console.log(id);
       if(!data) throw new NotFoundException("sdas aasfssdfaaswd");
       return data;
     }

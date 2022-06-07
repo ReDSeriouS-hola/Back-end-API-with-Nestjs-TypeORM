@@ -29,12 +29,12 @@ export class ContactoController {
           return this.contactoService.findOne(id);
         }
       
-        @Patch(':id')
+        @Patch('/update/:id')
         update(@Param('id') id:number, @Body() updateContactoDto: CreateContactoDTO) {
           return this.contactoService.update(id, updateContactoDto);
         }
       
-        @Delete(':id')
+        @Delete('/delete/:id')
         remove(@Param('id') id: number) {
           return this.contactoService.remove(id);
         }
